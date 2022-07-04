@@ -1,0 +1,30 @@
+<h2>Template</h2>
+<hr>
+
+<ul class="list-group">
+    <li class="list-group-item" style="cursor: pointer;"  [routerLink]="item.ruta" routerLinkActive="active" *ngFor="let item of templateMenu">
+        {{item.texto}}
+    </li>
+</ul>
+
+<br>
+
+<h2>Reactive</h2>
+<hr>
+
+<ul class="list-group">
+    <li class="list-group-item" style="cursor: pointer;" [routerLink]="item.ruta" routerLinkActive="active" *ngFor="let item of reactiveMenu">
+        {{item.texto}}
+    </li>
+</ul>
+
+
+
+<h2>Validaciones</h2>
+<hr>
+
+<ul class="list-group">
+    <li class="list-group-item" style="cursor: pointer;" [routerLink]="item.ruta" routerLinkActive="active" *ngFor="let item of authMenu">
+        {{item.texto}}
+    </li>
+</ul>
